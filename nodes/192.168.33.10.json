@@ -1,5 +1,5 @@
 {"run_list":
   [
-    "nginx"
+    "role[develop]"
   ]
 }

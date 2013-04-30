@@ -1,0 +1,25 @@
+{
+  "name":"develop",
+  "default_attributes":{},
+  "override_attributes":{},
+  "json_class":"Chef::Role",
+  "description":"",
+  "chef_type":"role",
+  "run_list":
+  [
+  /*
+    "apt",
+    "yum",
+    "java",
+    "leiningen",
+    "nginx",
+    "nodejs",
+    "npm",
+    "npm-install",
+    "vim",
+    "user",
+    */
+    "ruby-build",
+    "rbenv::system"
+  ]
+}

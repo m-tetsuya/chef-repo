@@ -1,9 +1,8 @@
 #
-# Cookbook Name:: npm
+# Cookbook Name:: rbenv
+# Recipe:: default
 #
-# Author:: Sergey Balbeko <sergey@balbeko.com>
-#
-# Copyright 2012, Sergey Balbeko
+# Copyright 2011, Fletcher Nichol
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,5 +17,7 @@
 # limitations under the License.
 #
 
-default['npm']['version'] = '1.2.18'
-#default['npm'][''] = ''
+class Chef::Recipe
+  # mix in recipe helpers
+  include Chef::Rbenv::RecipeHelpers
+end

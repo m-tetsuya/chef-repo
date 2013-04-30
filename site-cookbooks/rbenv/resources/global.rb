@@ -1,9 +1,10 @@
 #
-# Cookbook Name:: npm
+# Cookbook Name:: rbenv
+# Resource:: global
 #
-# Author:: Sergey Balbeko <sergey@balbeko.com>
+# Author:: Fletcher Nichol <fnichol@nichol.ca>
 #
-# Copyright 2012, Sergey Balbeko
+# Copyright 2011, Fletcher Nichol
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,5 +19,17 @@
 # limitations under the License.
 #
 
-default['npm']['version'] = '1.2.18'
-#default['npm'][''] = ''
+actions :create
+
+attribute :rbenv_version, :kind_of => String, :name_attribute => true
+attribute :user,          :kind_of => String
+attribute :root_path,     :kind_of => String
+
+def initialize(*args)
+  super
+  @action = :create
+end
+
+def to_s
+  "#{super} (#{@user || 'system'})"
+end
