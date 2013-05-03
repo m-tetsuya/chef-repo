@@ -19,7 +19,7 @@
     "vim",
     "user",
     */
-    "ruby-build",
+    "ruby_build",
     "rbenv::system"
   ]
 }
