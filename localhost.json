@@ -1,4 +1,6 @@
 {"run_list":[
+  "recipe[user]",
+  "recipe[vim]",
   "recipe[ruby_build]",
   "recipe[rbenv::system]"
 ]}
