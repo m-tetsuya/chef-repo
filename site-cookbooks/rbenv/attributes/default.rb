@@ -35,7 +35,7 @@ default['rbenv']['user_installs'] = []
 
 # list of additional rubies that will be installed
 #default['rbenv']['rubies']      = []
-default['rbenv']['rubies']      = ["2.0.0-p353"] 
+default['rbenv']['rubies']      = ["2.0.0-p576"] 
 default['rbenv']['user_rubies'] = []
 
 # hash of gems and their list of additional gems to be installed.
